@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_width="400dp"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/edtText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <RadioGroup
+        android:id="@+id/radioGroupOptions"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"> 
+        
+       <RadioButton
+           android:id="@+id/radioUppercase"
+           android:text="Uppercase"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+        
+        <RadioButton
+            android:id="@+id/radioLowercase"
+            android:text="Lowercase"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <RadioButton
+            android:id="@+id/radioInitCap"
+            android:text="Init Cap"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>    
+    
+    <CheckBox
+        android:id="@+id/chkReverse"
+        android:text="Reverse"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupOptions"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSet"
+        android:text="Set"
+        app:layout_constraintTop_toBottomOf="@+id/chkReverse"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
